@@ -1,0 +1,11 @@
+name: LCModuleKit
+main: github.Lucycraft.LucycraftModule.Kit.LCModuleKit
+version: 0.0.1a
+authors: [cskiwi, thisisboris]
+description: After a couple of months of hosting a bukkit server, we decided to create our very own plugin, based upon the way we play minecraft.
+commands:
+    kit:
+        description: Basic command to access help
+        usage: |
+          Example: /<command> : Shows the basic help page.
+    
