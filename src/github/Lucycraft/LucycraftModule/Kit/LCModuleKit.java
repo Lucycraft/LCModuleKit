@@ -8,7 +8,7 @@ import java.util.logging.Logger;
 import github.Lucycraft.LCCore.LCCore;
 import github.Lucycraft.LucycraftModule.Kit.Includes.LCLogger;
 import github.Lucycraft.LucycraftModule.Kit.Listeners.LCBlockListener;
-import github.Lucycraft.LucycraftModule.Kit.Listeners.LCCommandListener;
+import github.Lucycraft.LucycraftModule.Kit.Listeners.LCCommandManager;
 import github.Lucycraft.LucycraftModule.Kit.Listeners.LCPlayerListener;
 
 import org.bukkit.command.Command;
@@ -20,7 +20,7 @@ import org.bukkit.plugin.PluginManager;
 import org.bukkit.plugin.java.JavaPlugin;
 
 /**
- * LucycraftEconomy - Extend your minecraft experiance with an econmy system
+ * LucycraftEconomy - Extend your minecraft experiance with an econmy system.
  *
  * @authors Thisisboris and cskiwi
  */
@@ -28,7 +28,7 @@ import org.bukkit.plugin.java.JavaPlugin;
 public class LCModuleKit extends JavaPlugin {
 	private final LCPlayerListener playerListener = new LCPlayerListener();
     private final LCBlockListener blockListener = new LCBlockListener();
-    private final static LCCommandListener commandManager = new LCCommandListener();
+    private final static LCCommandManager commandManager = new LCCommandManager();
     private Plugin LCCore;
 	public static String name;
     public static String version;
@@ -93,7 +93,7 @@ public class LCModuleKit extends JavaPlugin {
     }
     
     /* Getters and setters */
-    public static LCCommandListener GetcommandManager(){
+    public static LCCommandManager GetcommandManager(){
     	return commandManager;
     }
 }

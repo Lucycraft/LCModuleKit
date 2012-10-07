@@ -1,13 +1,11 @@
 package github.Lucycraft.LucycraftModule.Kit.Listeners;
 
-
 import github.Lucycraft.LucycraftModule.Kit.LCModuleKit;
 
-
+import org.bukkit.ChatColor;
 import org.bukkit.Material;
 import org.bukkit.block.Block;
 import org.bukkit.entity.Player;
-import org.bukkit.ChatColor;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;
 import org.bukkit.event.block.BlockBreakEvent;

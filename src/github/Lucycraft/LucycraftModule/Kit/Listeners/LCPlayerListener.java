@@ -31,7 +31,8 @@ public class LCPlayerListener implements Listener {
 	@EventHandler
 	public void onPlayerInteract(PlayerInteractEvent event) {
 		if (event.getClickedBlock().getState() instanceof Sign) {
-			Sign sign = (Sign)event.getClickedBlock().getState();
+			// just testing around
+			 Sign sign = (Sign)event.getClickedBlock().getState();
 			
 			LCModuleKit.GetcommandManager().sendMessageToPlayer(ChatColor.YELLOW + sign.getLine(2) + ChatColor.WHITE, event.getPlayer());
 		}
